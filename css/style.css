@@ -1,0 +1,65 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TYPO */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* COMMONS */
+.container{
+    position: relative;
+    width: 100vw;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    right: 0;
+    width: calc(100vw - 250px);
+    height: 70px;
+    background-color: antiquewhite;
+}
+
+/* ASIDE */
+aside{
+    height: 100vh;
+    width: 250px;
+    background-color: chocolate;
+}
+
+/* MAIN */
+main{
+    height: calc(100% - 140px);
+    width: calc(100% - 250px);
+    background-color: cyan;
+}
+/* sections */
+section{
+    height: 100%;
+    width: calc(100% - 250px);
+    display: flex;
+    align-content: flex-end;
+    flex-shrink: 0;
+    gap: 10px;
+    background-color: darkmagenta;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: cornflowerblue;
+}
+
