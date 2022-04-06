@@ -12,7 +12,7 @@ body{
     color: #7d7f84;
 }
 
-h1{
+h2{
     color: snow;
 }
 
@@ -25,7 +25,7 @@ h1{
 .container-small{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     flex-shrink: 0;
 }
 
@@ -45,7 +45,7 @@ header{
 /* ASIDE */
 aside{
     height: calc(100vh - 90px);
-    width: 250px;
+    width: 300px;
     background-color: #000000;
     z-index: 9;
 }
@@ -55,6 +55,7 @@ main{
     text-align: center;
     width: 100%;
     height: calc(100vh - 90px);
+    overflow-y: auto;
     background-color: #141922;
 }
 
@@ -85,6 +86,10 @@ section{
 
 .album strong{
     color: snow;
+}
+
+.album .radius{
+    border-radius: 50%;
 }
 
 /* FOOTER */
