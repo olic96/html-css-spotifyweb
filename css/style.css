@@ -54,7 +54,7 @@ button{
    background-color: transparent;
    color: snow;
    padding: 10px 30px;
-   border: 1px solid white;
+   border: 1px solid snow;
    margin: 25px 5px;
    cursor: pointer;
 }
@@ -80,6 +80,7 @@ aside{
     flex-shrink: 0;
     display: flex;
     align-content: flex-start;
+    padding: 0 15px;
 }
 
 .menu{
@@ -93,6 +94,12 @@ aside{
     height: 35px;
     width: 35px;
     background-size: contain;
+    cursor: pointer;
+}
+
+.small{
+    height: 15px;
+    width: 15px;
 }
 
 .playlist{
@@ -100,8 +107,44 @@ aside{
     overflow-y: auto;
 }
 
+.new-playlist{
+    display: flex;
+    align-items: center;
+}
+
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#7d7f84;
+    height: 30px;
+    width: 30px;
+    color: #000000;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+}
+
+
 .account{
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
+    color: #fffafa;
+}
+
+.profile{
+    height: 25px;
+    width: 25px;
+    background-color: #7d7f84;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 
