@@ -16,6 +16,12 @@ h2{
     color: snow;
 }
 
+hr{
+    width: 85%;
+    margin: 0 20px;
+    border: 1px solid #7d7f84;
+}
+
 /* COMMONS */
 .container{
     display: flex;
@@ -80,7 +86,12 @@ aside{
     flex-shrink: 0;
     display: flex;
     align-content: flex-start;
-    padding: 0 15px;
+    padding: 20px 15px;
+}
+
+.nav-aside ul li{
+    list-style-type: none;
+    margin-top: 15px;
 }
 
 .menu{
@@ -104,12 +115,23 @@ aside{
 
 .playlist{
     flex-grow: 1;
+    padding: 20px 20px;
     overflow-y: auto;
 }
 
+.playlist ul li{
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.playlist h4{
+    color: #fffafa;
+}
 .new-playlist{
     display: flex;
     align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 .plus{
@@ -125,14 +147,20 @@ aside{
 .download{
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 
 .account{
     display: flex;
     align-items: center;
+    gap: 10px;
     flex-shrink: 0;
     color: #fffafa;
+    padding: 15px 20px;
+    cursor: pointer;
 }
 
 .profile{
@@ -173,7 +201,9 @@ nav ul li{
 section{
     text-align: left;
     padding: 20px;
+    margin-top: 30px;
 }
+
 
 .album{
     text-align: center;
@@ -181,6 +211,11 @@ section{
     width: 190px;
     height: 250px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.subtitle ,p{
+    margin-top: 10px;
 }
 
 .album strong{
