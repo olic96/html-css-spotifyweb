@@ -286,6 +286,8 @@ footer{
 .footer-left{
     display: flex;
     align-items: center;
+    gap: 15px;
+    margin-left: 10px;
 }
 
 .small-album{
@@ -298,8 +300,30 @@ footer{
     color: snow;
 }
 
+.description small:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: snow;
+}
+
+.favorite{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    color: snow;
+}
+
+
 .media-player{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-size: 23px;
+    margin-bottom: 15px;
     color: snow;
 }
 
@@ -307,6 +331,11 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
+}
+
+.play{
+    font-size: 40px;
 }
 
 .time{
@@ -328,6 +357,7 @@ footer{
 }
 
 .time-line-color{
+    position: relative;
     height: 100%;
     width: 25%;
     background-color: gainsboro;
@@ -337,6 +367,30 @@ footer{
 .footer-right{
     display: flex;
     align-items: center;
+    gap: 20px;
     color: snow;
+    margin-right: 10px;
 }
+
+.fa-solid, .fa-regular, .time-line-color{
+    cursor: pointer;
+}
+
+
+.time-line-color:hover::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+.time-line-color:hover{
+    background-color: lightgreen;
+}
+
+
 /* RESPONSIVE */
