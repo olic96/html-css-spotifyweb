@@ -90,6 +90,7 @@ aside{
 }
 
 .nav-aside{
+    position: relative;
     flex-shrink: 0;
     display: flex;
     align-content: flex-start;
@@ -106,13 +107,23 @@ aside{
     align-items: center;
     gap: 2px;
     width: 100%;
+    fill: #7d7f84;
 }
 
-.menu a:hover{
+.menu a:hover, .icon:hover{
     color: snow;
+    fill: snow;
 }
 
-
+.nav-aside::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    background-color: lightgreen;
+    left: 0;
+    top: 18%;
+}
 
 .icon{
     height: 35px;
@@ -120,6 +131,7 @@ aside{
     background-size: contain;
     cursor: pointer;
 }
+
 
 .small{
     height: 15px;
