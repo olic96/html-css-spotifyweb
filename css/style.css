@@ -53,6 +53,8 @@ header{
     height: 90px;
     width: 100%;
     background-color: #080b12;
+    opacity: 0.9;
+    z-index: 2;
 }
 
 button{
@@ -271,6 +273,9 @@ section{
 
 /* FOOTER */
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: 90px;
@@ -278,4 +283,60 @@ footer{
     z-index: 10;
 }
 
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.small-album{
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+}
+
+.description > strong{
+    color: snow;
+}
+
+.media-player{
+    text-align: center;
+    color: snow;
+}
+
+.time-reproduction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time{
+    color: snow;
+    font-size: 12px;
+}
+.time-line{
+    height: 5px;
+    width: 500px;
+    background-color:#7d7f84 ;
+    border-radius: 10px;
+}
+
+.volume-line{
+    height: 5px;
+    width: 100px;
+    background-color:#7d7f84 ;
+    border-radius: 10px;
+}
+
+.time-line-color{
+    height: 100%;
+    width: 25%;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    color: snow;
+}
 /* RESPONSIVE */
