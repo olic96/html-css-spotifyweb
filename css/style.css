@@ -63,8 +63,13 @@ button{
    color: snow;
    padding: 10px 30px;
    border: 1px solid snow;
-   margin: 25px 5px;
+   margin: 25px 25px;
    cursor: pointer;
+   transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.2);
 }
 
 /* ASIDE */
@@ -103,6 +108,12 @@ aside{
     width: 100%;
 }
 
+.menu a:hover{
+    color: snow;
+}
+
+
+
 .icon{
     height: 35px;
     width: 35px;
@@ -131,15 +142,24 @@ aside h4{
     margin: 15px 0;
 }
 
+.playlist ul li a:hover{
+    color: snow;
+}
+
 .playlist h4{
     color: #fffafa;
 }
+
 .new-playlist{
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     padding: 10px 20px;
+}
+
+.new-playlist:hover{
+    color: snow;
 }
 
 .plus{
@@ -158,6 +178,10 @@ aside h4{
     gap: 10px;
     padding: 10px 15px;
     cursor: pointer;
+}
+
+.download:hover{
+    color: snow;
 }
 
 
@@ -196,6 +220,22 @@ main{
 nav{
     margin-top: 100px;
     height: 35px;
+    position: relative;
+}
+
+nav ul li:hover{
+    color: snow;
+}
+
+nav ul li::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 29%;
+    bottom: 0;
+    transform: translate(-50%);
+    background-color: lightgreen;
 }
 
 nav ul li{
@@ -335,7 +375,12 @@ footer{
 }
 
 .play{
-    font-size: 40px;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.play:hover{
+   transform: scale(1.2);
 }
 
 .time{
@@ -381,8 +426,8 @@ footer{
     content: "";
     position: absolute;
     right: 0;
-    top: 0;
-    background-color: red;
+    top: -5px;
+    background-color: snow;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -391,6 +436,7 @@ footer{
 .time-line-color:hover{
     background-color: lightgreen;
 }
+
 
 
 /* RESPONSIVE */
